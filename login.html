@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InsideBox Login</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+      height: 100vh;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 25px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .login-container {
+      width: 360px;
+      background: #fff;
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .subtitle {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      color: #111;
+    }
+
+    form input[type="email"],
+    form input[type="password"] {
+      width: 100%;
+      padding: 11px;
+      margin-bottom: 14px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      font-size: 13px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      font-size: 11px;
+      color: #666;
+    }
+
+    .options a {
+      color: #3366ff;
+      text-decoration: none;
+    }
+
+    .signin-btn {
+      width: 100%;
+      padding: 11px;
+      background: #2f6bff;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      font-size: 13px;
+      cursor: pointer;
+      margin-bottom: 12px;
+    }
+
+    .signin-btn:hover {
+      background: #2557d6;
+    }
+
+    .google-btn {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid #ddd;
+      background: white;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .google-btn img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .signup-text {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 11px;
+      color: #777;
+    }
+
+    .signup-text a {
+      color: #3366ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">BetaTechProject</div>
+
+  <div class="login-container">
+    <p class="subtitle">Please enter your details</p>
+    <h2>Welcome back</h2>
+
+    <form>
+      <input type="email" placeholder="Email address" required>
+      <input type="password" placeholder="Password" required>
+
+      <div class="options">
+        <label>
+          <input type="checkbox"> Remember me for 30 days
+        </label>
+        <a href="#">Forgot password</a>
+      </div>
+
+      <button type="submit" class="signin-btn">Sign in</button>
+
+      <button type="button" class="google-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" alt="Google">
+        Sign in with Google
+      </button>
+
+      <p class="signup-text">
+        Don't have an account? <a href="#">Sign up</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>
